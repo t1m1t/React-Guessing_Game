@@ -1,27 +1,129 @@
-/*.app {*/
-    /*background-color: #000;*/
-    /*color: #fff;*/
-    /*padding: 50px;*/
-    /*text-align: center;*/
-/*}*/
+.main-compartment{
+    margin: 0;
+}
 
-/*.app img {*/
-    /*height: 100px;*/
-/*}*/
+.trooperPic{
+    position: absolute;
+}
 
-/*.rotate {*/
-    /*animation: spin 10s linear infinite;*/
-/*}*/
+.trooper{
+    margin: 440px 0 0 48px;
+    width: 150px;
+    height: auto;
+}
 
-/*@keyframes spin {*/
-    /*from {*/
-        /*transform: rotate(0deg);*/
-    /*}*/
-    /*to {*/
-        /*transform: rotate(360deg);*/
-    /*}*/
-/*}*/
+.game_title {
+    font-size: 70px;
+    color: white;
+    margin: 25px 0 0 575px;
+    text-shadow:
+            4px 4px 0 black,
+            -2px -2px 0 black,
+            2px -2px 0 black,
+            -2px 2px 0 black,
+            2px 2px 10px black;
+}
 
-body{
-    margin: 0 auto;
+.game_subtitle{
+    font-size: 30px;
+    color: white;
+    margin: 20px 0 0 792px;
+    text-shadow:
+            3px 3px 0 black,
+            -2px -2px 0 black,
+            2px -2px 0 black,
+            -2px 2px 0 black,
+            2px 2px 6px black;
+}
+
+.history{
+    border: 3px solid black;
+    border-radius: 2px;
+    width: 380px;
+    height: 150px;
+    font-size: 20px;
+    margin: 0 0 0 703px;
+    padding: 5px;
+    box-shadow:
+            4px 4px 0 black,
+            3px 3px 0 black,
+            3px 3px 0 black,
+            3px 3px 0 black,
+            3px 3px 10px black;
+}
+
+h3.text-primary,
+h3.text-success,
+h3.text-danger {
+    text-shadow:
+            2px 2px 0 black,
+            2px 2px 0 black,
+            2px 2px 0 black,
+            2px 2px 0 black,
+            2px 2px 4px black;
+    margin: 5px 0 10px 250px;
+}
+
+h3.text-sucess{
+    margin: 5px 0 10px 255px;
+}
+
+h3.text-primary {
+    margin: 5px 0 10px 270px;
+}
+
+h3.text-danger{
+    margin: 5px 0 10px 264px;
+}
+
+h5{
+    font-size: 15px;
+    color: white;
+    text-shadow:
+            2px 2px 0 black,
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 4px black;
+}
+
+.text-box{
+    float: right;
+    width: 380px;
+    margin: 40px 50px 10px 783px;
+}
+
+input.form-control{
+    background-color: transparent;
+    border: 3px solid black;
+    box-shadow:
+            3px 3px 0 black,
+            2px 2px 0 black,
+            2px 2px 0 black,
+            2px 2px 0 black,
+            2px 2px 4px black;
+    color: white;
+}
+
+.btn-primary {
+    border: 3px solid black;
+    box-shadow:
+            3px 3px 0 black,
+            2px 2px 0 black,
+            2px 2px 0 black,
+            2px 2px 0 black,
+            2px 2px 4px black;
+}
+
+.reset_button {
+    padding: 7px 40px;
+    border: 3px solid black;
+    margin: 30px 50px 0 0;
+    float: right;
+    box-shadow:
+            3px 3px 0 black,
+            2px 2px 0 black,
+            2px 2px 0 black,
+            2px 2px 0 black,
+            2px 2px 4px black;
 }
