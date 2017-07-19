@@ -41,7 +41,8 @@ class Guess extends Component {
         });
     }
 
-    resetGuess(){
+    resetGuess(event){
+        event.preventDefault();
         this.setState({
             randomNumber: Math.floor(Math.random() * 10) + 1,
             userGuess: '',
@@ -69,6 +70,7 @@ class Guess extends Component {
                                        className="form-control" value={this.state.userGuess}/>
                                     <span className="input-group-btn">
                                         <button className="btn btn-primary">Make Guess</button>
+                                        <button onClick={(event) => this.resetGuess(event)} className="reset_button btn btn-danger">Reset</button>
                                     </span>
                                 </div>
                             </form>
@@ -80,7 +82,6 @@ class Guess extends Component {
                 <div className="history pre-scrollable col-sm-6">
                     {historyOutput}
                 </div>
-                <button onClick={(event) => this.resetGuess(event)} className="reset_button btn btn-danger">Reset</button>
             </div>
 
 
