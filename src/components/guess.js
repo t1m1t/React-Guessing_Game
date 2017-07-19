@@ -28,9 +28,9 @@ class Guess extends Component {
         } else if (userGuess < randomNumber) {
             newOutcome = "Too Low";
         } else if (userGuess === randomNumber) {
-            newOutcome = "You Got It";
+            newOutcome = "Got It!";
         } else {
-            newOutcome = "No Guess Given";
+            newOutcome = "Error!";
         }
 
         const newHistory = `You Guessed: ${userGuess}. Outcome: ${newOutcome}`;
@@ -44,7 +44,7 @@ class Guess extends Component {
     resetGuess(event){
         event.preventDefault();
         this.setState({
-            randomNumber: Math.floor(Math.random() * 10) + 1,
+            randomNumber: Math.floor(Math.random() * 50) + 1,
             userGuess: '',
             outcome: '',
             history: []
@@ -80,7 +80,7 @@ class Guess extends Component {
                 </div>
 
                 <div className="history pre-scrollable col-sm-6">
-                    {historyOutput}
+                    <h3 className="innerbox-history">History</h3>{historyOutput}
                 </div>
             </div>
 
