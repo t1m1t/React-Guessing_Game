@@ -28,6 +28,7 @@ class Guess extends Component {
         } else if (userGuess < randomNumber) {
             newOutcome = "Too Low";
         } else if (userGuess === randomNumber) {
+            alert
             newOutcome = "Got It!";
         } else {
             newOutcome = "Error!";
@@ -48,7 +49,7 @@ class Guess extends Component {
             userGuess: '',
             outcome: '',
             history: []
-        })
+        });
     }
 
     render() {
@@ -56,7 +57,6 @@ class Guess extends Component {
 
         const historyOutput = history.map((item, index) => {
             return <h5 key={index}>{item}</h5>;
-
         });
 
         return (
@@ -80,7 +80,7 @@ class Guess extends Component {
                 </div>
 
                 <div className="history pre-scrollable col-sm-6">
-                    <h3 className="innerbox-history">History</h3>{historyOutput}
+                    <h4 className="innerbox-history">Already Played #'s</h4>{historyOutput}
                 </div>
             </div>
 
