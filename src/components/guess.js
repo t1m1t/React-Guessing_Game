@@ -80,7 +80,7 @@ class Guess extends Component {
                 </div>
 
                 <div className="history pre-scrollable col-sm-6">
-                    <h4 className="innerbox-history">Already Played #'s</h4>{historyOutput}
+                    <h4 className="innerbox-history">Already Used Numbers</h4>{historyOutput}
                 </div>
             </div>
 
