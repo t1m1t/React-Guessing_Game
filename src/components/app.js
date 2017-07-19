@@ -8,7 +8,7 @@ const App = () => (
             <h1 className="game_title">Guessing Game!</h1>
         </div>
         <div className="game-subtitle">
-            <h2 className="game_subtitle">Guess a number 1-10</h2>
+            <h2 className="game_subtitle">Guess a number: 1-10</h2>
         </div>
         <Guess />
     </div>
