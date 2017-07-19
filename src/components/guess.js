@@ -69,7 +69,7 @@ class Guess extends Component {
                                     <input onChange={(event) => this.handleChange(event)} type="number"
                                        className="form-control" value={this.state.userGuess}/>
                                     <span className="input-group-btn">
-                                        <button className="btn btn-primary">Make Guess</button>
+                                        <button className="guess_button btn btn-primary">Make Guess</button>
                                         <button onClick={(event) => this.resetGuess(event)} className="reset_button btn btn-danger">Reset</button>
                                     </span>
                                 </div>
